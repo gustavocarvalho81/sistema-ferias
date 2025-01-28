@@ -17,7 +17,7 @@ const VacationSystem = () => {
     formData.append('dias_alerta', dias);
 
     try {
-      const response = await fetch('https://sua-api.render.com/analisar-ferias', {
+      const response = await fetch('https://sistema-ferias.onrender.com', {
         method: 'POST',
         body: formData,
       });
